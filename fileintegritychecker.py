@@ -2,6 +2,20 @@ import hashlib
 import os
 import pickle
 
+# Displaying a custom banner
+def display_banner():
+    banner = """
+    ______ _ _        _____      _                  _ _           _____ _               _             
+    |  ___(_) |      |_   _|    | |                (_) |         /  __ \ |             | |            
+    | |_   _| | ___    | | _ __ | |_ ___  __ _ _ __ _| |_ _   _  | /  \/ |__   ___  ___| | _____ _ __ 
+    |  _| | | |/ _ \   | || '_ \| __/ _ \/ _` | '__| | __| | | | | |   | '_ \ / _ \/ __| |/ / _ \ '__|
+    | |   | | |  __/  _| || | | | ||  __/ (_| | |  | | |_| |_| | | \__/\ | | |  __/ (__|   <  __/ |   
+    \_|   |_|_|\___|  \___/_| |_|\__\___|\__, |_|  |_|\__|\__, |  \____/_| |_|\___|\___|_|\_\___|_|   
+                                          __/ |            __/ |                                      
+                                         |___/            |___/                                       
+    """
+    print(banner)
+
 # Function to calculate the hash of a file
 def calculate_file_hash(file_path):
     hash_sha256 = hashlib.sha256()
@@ -44,6 +58,9 @@ def check_file_integrity(files, hash_file):
 
 # Main function
 def main():
+    # Display the banner
+    display_banner()
+    
     # Example file paths (can be a list of files or directory scanning)
     files_to_monitor = ["file1.txt", "file2.txt", "example.txt"]  # Add your file paths here
     hash_storage_file = "file_hashes.pkl"
