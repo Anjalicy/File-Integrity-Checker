@@ -42,3 +42,9 @@ After comparing, the script updates the stored hash values for future comparison
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Preview Image
+
+Here’s a screenshot of the project:
+
+![Screenshot](Screenshot.png.png)
